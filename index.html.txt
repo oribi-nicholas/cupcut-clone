@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Video & Photo Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Free Video & Photo Editor</h1>
+        <p>Edit videos and photos online for free!</p>
+    </header>
+
+    <section id="editor">
+        <div class="upload-section">
+            <h2>Upload Video or Photo</h2>
+            <input type="file" id="fileInput" accept="video/*,image/*">
+        </div>
+
+        <div class="preview-section">
+            <h2>Preview</h2>
+            <video id="videoPreview" controls style="display:none;"></video>
+            <img id="imagePreview" style="display:none;" />
+        </div>
+
+        <div class="controls-section">
+            <button id="trimBtn">Trim Video</button>
+            <button id="applyFilterBtn">Apply Filter</button>
+            <button id="exportBtn">Export</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
